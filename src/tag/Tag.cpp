@@ -3,29 +3,24 @@
 
 using namespace sf;
 
-
 int main()
 
 {
-	RenderWindow window(VideoMode(800,600), "15 puzzle");
-
+	RenderWindow app(VideoMode(400,400), "15 puzzle");
+	menu(app);
 	
-	
-	menu(window);
-	
-	
-	while (window.isOpen())
+	while (app.isOpen())
 	{
 		Event event;
-		while (window.pollEvent(event))
+		while (app.pollEvent(event))
 		{
 			if (event.type == Event::Closed)
-				window.close();
+				app.close();
 		}
 		
-		window.clear();
+		app.clear();
 
-		window.display();
+		app.display();
 	}
 	return 0;
 }
