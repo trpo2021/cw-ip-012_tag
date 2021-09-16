@@ -7,6 +7,7 @@ using namespace sf;
 void game(RenderWindow& app) {
     app.setFramerateLimit(60);
     Texture Texture;
+    srand(time(0));
     int u = rand()% 3 + 1;
     switch (u)
     {

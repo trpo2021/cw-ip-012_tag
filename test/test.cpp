@@ -3,7 +3,14 @@
 
 #include <ctest.h>
 
-int main(int argc, const char** argv)
-{
+int main(int argc, const char** argv){
     return ctest_main(argc, argv);
+}
+
+void menu() {
+    return ctest_menu();
+}
+
+void game() {
+    return ctest_game();
 }
